@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<link rel="stylesheet" type="text/css" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+  <head>
+    <title>CRUD Cadastro JS</title>
+    <meta charset="utf-8">
+    
+  </head>
+
+  <body> 
+    <div>
+        <h1>Bem vindo ao meu CRUD de Vanilla JS!</h1>
+        <p>Cadastre um e-mail e senha fictícios e depois teste o login.</p>
+        
+        <form method="POST" action="cadastro.php">
+            <input type="text" name="email" id="email" class="email" placeholder="Ex: emailfalso@email.com"><br>
+            <input type="password" name="senhacad" id="senhacad" class="senhacad" placeholder="Senha 8 dígitos"><br>
+            <input type="submit" value="Cadastrar" id="cadastrar" name="cadastrar" class="submeter">
+        </form>
+    </div>
+   
+    <!--<img width="300px" src="images/icecream.png" class="icecad">-->
+    <script type="text/javascript" src="javascript.js"></script>
+    <script>alert("Os dados poderão ficar armazenados na minha database. NÃO USE SENHAS REAIS!");</script>
+  </body>
+  
+</html>
