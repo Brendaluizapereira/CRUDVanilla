@@ -1,0 +1,23 @@
+.logo-center {
+    max-width: 50px;
+    max-height: 50px;
+    margin: 25px 0 30px 0;
+}
+
+.sectiontwo-desc{
+    font-family: Arial, Helvetica, sans-serif;
+    color:  #ffc20f;
+    font-size: 30px;
+    width: 300px;
+    line-height: 2;
+}
+
+.blue-square {
+    width: 200px;
+    border: 6px solid #1e68a5;
+    outline: none;
+}
+
+.sectiontwo-img{
+    width: 100%;
+}

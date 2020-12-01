@@ -1,0 +1,69 @@
+/*Web*/
+@media (min-width: 950px) 
+{
+    .sectionfour-div{
+        width: 100%;
+        height: 120vh;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 30px;
+    }
+
+    .sectionfour-img {
+        width: 100%;
+        height: 50%;
+        background-position: center;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-image: url(/assets/usingphoneweb.png);
+    }
+
+    .sectionfour-txt1 {
+        text-align: center;
+        color:  #ffc20f;
+        padding-top: 80px;
+        padding-bottom: 60px;
+    }
+
+    .sectionfour-txt2 {
+        text-align: center;
+        color:  #1e68a5;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}
+
+/*Mobile
+
+.sectionfour-div{
+    width: 100%;
+    height: 90vh;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    padding-top: 8em;
+}
+
+.sectionfour-img {
+    width: 100%;
+    height: 20vh;
+    background-image: url(/assets/usingphone.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.sectionfour-txt1 {
+    position: relative;
+    text-align: center;
+    width: 20em;
+    padding-bottom: 7em;
+    color:  #ffc20f;
+}
+
+.sectionfour-txt2 {
+    position: relative;
+    text-align: center;
+    width: 20em;
+    color:  #1e68a5;
+    padding-top: 4em;
+}
+*/
