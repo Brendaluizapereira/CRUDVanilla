@@ -11,6 +11,7 @@ import { SectionMainComponent } from './views/section-main/section-main.componen
 import { RegisterFormComponent } from './views/register-form/register-form.component';
 import { ServiceListComponent } from './views/service-list/service-list.component';
 import { WebsiteComponent } from './views/website/website.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -22,11 +23,12 @@ import { WebsiteComponent } from './views/website/website.component';
     SectionMainComponent,
     RegisterFormComponent,
     ServiceListComponent,
-    WebsiteComponent
+    WebsiteComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

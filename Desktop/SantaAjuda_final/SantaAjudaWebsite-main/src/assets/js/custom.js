@@ -28,3 +28,49 @@ let x = setInterval(function() {
 }, 1000); 
 
 
+//Validating functions
+
+function validate() {
+  let validateEmail = document.getElementById("email").value;
+
+  if ((validateEmail == "") |=  !(pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$") ) {
+
+      document.getElementById("modalEmail").style.display = "block";
+
+      return false;
+
+  } else {
+
+      window.alert("Pronto! Assim que o app chegar, te avisaremos.");
+      document.getElementById("modalEmail").style.display = "none";
+      document.getElementById("contactForm").reset();
+      return true;
+      
+    }
+}
+
+
+function send() {
+  let email = document.getElementById("email").value;
+
+    if (validate()) {
+      $.ajax({
+        "URL":"https:ec2-52-25-113-53.us-west-2.compute.amazonaws.com", 
+        "method": "POST",
+        "content-type": "text/JSON",
+        "body": {
+          "email": email
+        }
+      })
+    }  
+
+    $("#contactForm");
+}
+
+// When the user clicks on <span> (x), close the modal
+
+function closeModal() {
+  document.getElementById("modalEmail").style.display = "none";
+}
+
+

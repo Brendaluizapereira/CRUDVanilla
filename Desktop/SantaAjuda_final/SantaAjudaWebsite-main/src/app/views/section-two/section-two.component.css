@@ -1,23 +1,84 @@
-.logo-center {
-    max-width: 50px;
-    max-height: 50px;
-    margin: 25px 0 30px 0;
+* {
+    padding: 0;
+    overflow: hidden;
 }
 
-.sectiontwo-desc{
+.logo-center {
+    max-width: 60px;
+    max-height: 60px;
+    margin: 25px 0 80px 0;
+}
+
+p {
     font-family: Arial, Helvetica, sans-serif;
     color:  #ffc20f;
-    font-size: 30px;
-    width: 300px;
     line-height: 2;
 }
 
-.blue-square {
-    width: 200px;
-    border: 6px solid #1e68a5;
-    outline: none;
-}
 
 .sectiontwo-img{
     width: 100%;
+    margin: 0 0 200px 0;
+}
+
+
+/*Small devices*/ 
+@media (max-width: 512px) {
+    
+    .sectiontwo-txt {
+        font-size: 25px;
+        text-align: center;
+        padding: 0 20px 0 20px;
+    }
+
+    .blue-square {
+        width: 100px;
+        height: 3px;
+    }
+
+    hr {
+        background-color: #1e68a5;
+        outline: none;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+}
+
+/*Medium devices*/ 
+@media (min-width: 513px) and (max-width: 953px) {
+    
+    .sectiontwo-txt{
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: 60px;
+    }
+
+    .blue-square {
+        width: 150px;
+        height: 5px;
+    }
+
+    hr {
+        background-color: #1e68a5;
+        outline: none;
+        margin: auto;
+    }
+}
+
+/* Large devices*/
+@media (min-width: 954px) { 
+
+    .sectiontwo-txt{
+        font-size: 30px;
+    }
+
+    .blue-square {
+        width: 200px;
+        height: 7px;
+    }
+
+    hr {
+        background-color: #1e68a5;
+        outline: none;
+    }
 }

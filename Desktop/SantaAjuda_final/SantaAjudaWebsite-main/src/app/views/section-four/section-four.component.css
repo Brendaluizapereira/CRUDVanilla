@@ -1,39 +1,93 @@
-/*Web*/
-@media (min-width: 950px) 
-{
-    .sectionfour-div{
-        width: 100%;
-        height: 120vh;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 30px;
-    }
+* {
+    padding: 0;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+    
+
+/*Small devices*/
+@media (max-width: 512px) {
 
     .sectionfour-img {
-        width: 100%;
-        height: 50%;
-        background-position: center;
+        height: 40vh;
         background-size: 100%;
         background-repeat: no-repeat;
-        background-image: url(/assets/usingphoneweb.png);
+        background-image: url(/assets/usingphoneweb.png)
     }
 
     .sectionfour-txt1 {
-        text-align: center;
         color:  #ffc20f;
-        padding-top: 80px;
-        padding-bottom: 60px;
+        font-size: 25px;
+        text-align: center;
+        padding: 100px 20px 80px 20px;
+    }
+    
+    .sectionfour-txt2 {
+        color:  #1e68a5;
+        font-size: 25px;
+        align-items: start;
+        padding-bottom: 80px;
+    }
+}
+
+/*Medium devices*/ 
+@media (min-width: 513px) and (max-width: 953px) {
+
+    .sectionfour-img {
+        height: 50vh;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-image: url(/assets/usingphoneweb.png)
     }
 
+    .sectionfour-txt1 {
+        color:  #ffc20f;
+        padding-top: 180px;
+        padding-bottom: 60px;
+        font-size: 25px;
+    }
+    
     .sectionfour-txt2 {
-        text-align: center;
         color:  #1e68a5;
         padding-top: 60px;
-        padding-bottom: 60px;
+        padding-bottom: 100px;
+        font-size: 25px;
     }
+
+}
+
+/* Large devices*/
+@media (min-width: 954px) {
+    
+    .sectionfour-img {
+        height: 50vh;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-image: url(/assets/usingphoneweb.png)
+    }
+
+    .sectionfour-txt1 {
+        color:  #ffc20f;
+        padding-top: 180px;
+        padding-bottom: 60px;
+        font-size: 30px;
+    }
+    
+    .sectionfour-txt2 {
+        color:  #1e68a5;
+        padding-top: 60px;
+        padding-bottom: 100px;
+        font-size: 30px;
+    }
+
 }
 
 /*Mobile
 
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) { ... }
 .sectionfour-div{
     width: 100%;
     height: 90vh;

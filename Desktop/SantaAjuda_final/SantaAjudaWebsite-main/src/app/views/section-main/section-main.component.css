@@ -1,23 +1,161 @@
+/*General styles here*/
 * {
     padding: 0;
+    overflow: hidden;
 }
 
-.hero-img {
-    width: 100%;
-    height: 90vh;
+.ease-transition {
+    transition: ease all .5s;
 }
 
-.hero-txt {
-    background-color: #ffc242;
-    padding: 100px 50px;
-    height: 90vh;
-}
-    
-p{
+p {
     color: #fff;
-    line-height: 2.5;
-    font-size: 2em;
-    text-align: center;
+    line-height: 2.5;  
 }
-   
+
+
+/*Small devices*/ 
+@media (max-width: 604px) {
+    .hero-img {
+        width: 100%;
+        height: 100vh;
+        margin-bottom: 20px;
+        background: url(/assets/heromobilegradient.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    
+    .hero-txt {
+        padding: 200px 60px 250px 0;
+        text-align: right;
+        font-size: 30px;
+    }
+}
+
+/*Medium devices*/ 
+@media (min-width: 605px) and (max-width: 953px) {
+    .hero-img {
+        width: 100%;
+        height: 100vh;
+        margin-bottom: 20px;
+        background: url(/assets/herotablets2.png);
+        background-repeat: no-repeat;
+        background-size: 100vh;
+    }
+    
+    .hero-txt {
+        background-color: #ffc242;
+        padding: 325px 0 250px 0;
+        text-align: center;
+        font-size: 30px;
+        height: 100vh;
+    }
+        
+}
+
+/* Large devices*/
+@media (min-width: 954px) { 
+
+    
+    .hero-img {
+        width: 100%;
+        height: 100vh;
+        margin-bottom: 50px;
+        background: url(/assets/heroweb2.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+
+    }
+    
+    .hero-txt {
+        background-color: #ffc242;
+        padding: 270px 0 0 0;
+        text-align: center;
+        font-size: 30px;
+        height: 100vh;
+    }
+        
+}
+
+
+/*Usability-adapted version*/
+/*Small devices 
+@media (max-width: 512px) {
+    .hero-img {
+        width: 100%;
+        height: 100vh;
+        margin-bottom: 20px;
+        background: url(/assets/heromobilegradient.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    
+    .hero-txt {
+        padding: 140px 0 25px 0;
+        font-size: 30px;
+        color: #fff;
+    }
+        
+    .main-txt {
+        padding-left: 25px;
+        font-size: 25px; 
+        font-family: Arial, Helvetica, sans-serif;   
+        color: #fff;  
+    }
+}
+
+/*Medium devices
+@media (min-width: 513px) and (max-width: 953px) {
+    .hero-img {
+        width: 100%;
+        height: 100vh;
+        margin-bottom: 20px;
+        background: url(/assets/herotablets.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    
+    .hero-txt {
+        padding: 200px 0 25px 0;
+        font-size: 40px;
+        color: #fff;
+    }
+        
+    .main-txt {
+        padding: 0 100px 0 25px;
+        font-size: 30px; 
+        font-family: Arial, Helvetica, sans-serif;   
+        color: #fff;  
+    }
+}
+
+/*Large devices
+@media (min-width: 954px) { 
+    
+    .hero-img {
+        width: 100vw;
+        height: 100vh;
+        margin-bottom: 50px;
+        background: url(/assets/heroweb.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+    
+    .hero-txt {
+        padding: 200px 0 5px 0;
+        font-size: 50px;
+        color: #fff;
+    }
+
+    .main-txt {
+        padding: 0 300px 0 0px;
+        font-size: 35px; 
+        font-family: Arial, Helvetica, sans-serif;   
+        color: #fff;  
+    }
+        
+    
+}
+*/
 

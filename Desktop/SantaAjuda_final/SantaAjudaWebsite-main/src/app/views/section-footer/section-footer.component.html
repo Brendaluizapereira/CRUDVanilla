@@ -1,29 +1,70 @@
-<div class="footer-div">
-    <div class="email-div">
-        <p class="email-txt">Seja notificado!</p>
-    
-        <div class="email-box">
-            <input type="email" class="email-input" placeholder="E-mail"><br>
-        
-            <input type="checkbox" class="checkbox"><label>Quero ser prestador</label>
-            <input type="checkbox" class="checkbox"><label>Quero contratar</label><br>
-            <button id="email-btn">Enviar</button>
+<section class="email">
+    <div class="row">
+        <div class="col-12 text-center email-div">
+            <p class="text-center email-txt">Seja notificado!</p>   
         </div>
-        
     </div>
+
+        
+    <div class="row">
+        <div class="col-12">
+            <form [formGroup]="emailForm" action="" method="POST">
+                <div class="form-group">
+                  
     
-        <div>
+                        <div class="email-box">
+                            <input type="email" id="email" class="form-control email-input" 
+                            placeholder="E-mail"required>
+                        </div>
+
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-8">
+                                    <div id="modalEmail" class="modal" style="display: none;">
+                                        <span class="close" onclick="closeModal()">&times;</span>
+                                        <p>Ops! Parece que você esqueceu de digitar o e-mail. </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="form-check">
+                            <input type="checkbox" class="checkbox form-check-input" value="1"><label>Quero ser prestador</label>
+                            <br>
+                            <input type="checkbox" class="checkbox form-check-input" value="2"><label>Quero contratar</label><br>
+                        </div>
+                        <div class="text-center">
+                            <input id="email-btn" type="submit" class="btn btn-primary mt-4" value="Enviar" onclick="send()">
+                        </div>
+                        
+                </div>
+                
+            </form>
+        </div>
+    </div>
+
+    
+</section>
+
+
+
+
+    
+<div class="row">
+        <div class="col-5">
             <a href="index.html"><img class="logo-footer" src="./assets/yellow-blue.png"></a>
         </div>
-    
-        <div class="icons">
-            <a href="#"><img class="icon" src="assets/facebook.png"></a>
+
+        <div class="col-2"></div>
+        
+        <div class=" col-5 icons">
+            <a href="#"><img class="icon facebook-icon" src="assets/facebook.png"></a>
             <a href="#"><img class="icon" src="assets/instagram.png"></a>
             <a href="#"><img class="icon twitter-icon" src="assets/twitter.png"></a>
             <br>
-        </div>  
+        </div> 
+</div> 
 
-</div>
     
 
     

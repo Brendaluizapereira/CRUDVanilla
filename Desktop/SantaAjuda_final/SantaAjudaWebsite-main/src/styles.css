@@ -1,7 +1,9 @@
+/*Cleaning padding so that elements will ocupy the whole page horizontally*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 body {
